@@ -1,0 +1,439 @@
+.todo{
+    padding: 20px;
+    background: rgb(44, 40, 75);
+}
+
+.menu_list{
+    background-color: rgb(44, 40, 75);
+    display: flex;
+    gap: 20px; /*espaciado entre texto*/
+    font-family: "Press Start 2P", system-ui;
+    font-size: 13px;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: #fFCC00;
+    
+}
+
+.btn_cv_download {
+    background-color: #3085d6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Espacio superior */
+    transition: 0.6s;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 13px;
+}
+
+.btn_cv_download:hover {
+    transform: scale(1.1);
+    background-color: #1a61a3;
+}
+
+
+.btn_1{
+    width: 50%;
+    height: 40px;
+    font-family: "Press Start 2P", system-ui;
+    border-radius: 28px;
+    background: #fFCC00;
+    transition: 0.6s;
+}
+
+.btn_1:hover{
+    background: #da8300;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+.title__network {
+    display: flex; /* Utiliza flexbox */
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+.title__network__item {
+    margin-right: 20px; /* Espacio entre los elementos */
+}
+
+.title__network__item a img {
+    width: 30px; /* Tamaño deseado para los iconos */
+    height: auto; /* Mantiene la proporción */
+}
+
+
+.title{
+    background-image: url("assets/pueblopaleta.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0; /* Ajusta el relleno según sea necesario */
+    text-align: center; /* Centra el contenido */
+}
+
+.title__div{
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+.title__container{
+    background-color: rgba(255, 255, 255, 0.5); /* Agrega transparencia */
+    border-radius: 28px;
+    padding: 25px;
+    margin: 20px;
+    width: 40%;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+.title__container h2{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+}
+
+.title__container h3{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 13px;
+}
+
+.title__profile{
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Permite que la imagen conserve su relación de aspecto */
+}
+
+.about__title{
+    text-align: center; /* Centra el título */
+}
+
+.about__paragraph{
+    margin: 20px; /* Agrega espacio entre párrafos */
+    font-family: "Press Start 2P", system-ui;
+    font-size: 15px;
+}
+
+
+
+.skills {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.skills__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills__box {
+    margin: 0 20px;
+    margin-bottom: 30px;
+}
+
+.skills__img img{
+    width: 100px; /* Establece el ancho deseado para todas las imágenes */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+}
+
+.skills__name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 10px;
+}
+
+.skills__box {
+    position: relative; /* Establece la posición relativa para que los elementos internos se posicionen con respecto a este contenedor */
+    margin: 0 20px;
+    margin-bottom: 30px;
+    text-align: center; /* Centra el contenido dentro de cada caja */
+}
+
+.skills__img {
+    width: 100px; /* Establece el ancho deseado para todas las imágenes */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    display: block; /* Permite que las imágenes se ajusten correctamente dentro de su contenedor */
+    margin: 0 auto; /* Centra horizontalmente las imágenes */
+    position: relative; /* Establece la posición relativa para que el círculo se posicione correctamente */
+    z-index: 1; /* Asegura que la imagen esté por encima del círculo */
+}
+
+.skills__img::before {
+    content: ""; /* Agrega un contenido vacío para que el pseudo-elemento sea visible */
+    position: absolute; /* Establece la posición absoluta con respecto al contenedor padre (.skills__box) */
+    top: 50%; /* Coloca el círculo en el centro verticalmente */
+    left: 50%; /* Coloca el círculo en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el círculo correctamente */
+    width: 100px; /* Establece el tamaño del círculo */
+    height: 100px; /* Establece el tamaño del círculo */
+    background-color: rgba(0, 118, 253, 0.5); /* Cambia aquí el color del círculo */
+    border-radius: 50%; /* Hace que el círculo tenga forma circular */
+    z-index: -1; /* Asegura que el círculo esté detrás de la imagen */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.about__content h3{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 15px;
+}
+
+
+
+.about__section {
+    background-color: #ff0000;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.about__content-wrapper {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.about__content {
+    flex: 1; /* El contenido ocupará todo el espacio restante */
+    margin-right: 20px; /* Agrega espacio entre el contenido y la imagen */
+    line-height: 1.6;
+}
+
+.about__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px; /* Agrega espacio entre el título y el texto */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about__paragraph {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.signature__container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    width: 200px;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    margin-left: auto; /* Alinea el contenedor a la derecha */
+    margin-right: auto; /* Alinea el contenedor a la izquierda */
+}
+
+
+
+
+
+/*IMAGEN UNDC*/
+.card{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+    line-height: 1.8;
+} 
+
+.card:hover .front {
+    transform: perspective(1200px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(1200px) rotateY(360deg);
+}
+
+
+/*ESTILOS FOOTER*/
+
+
+.footer {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+   
+    padding: 10px;
+    background: rgb(44, 40, 75);
+}
+
+.footer__rodape {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-family: "Press Start 2P", system-ui;
+    font-size: 15px;
+    line-height: 1.8;
+    color: white;
+}
+
+
+
+
+
+
+
+.formcontato__contacto {
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formcontato__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.formcontato__subtext {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.formcontato__form {
+    margin-top: 20px;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formcontato__input:focus,
+.formcontato__textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.formcontato__botao {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formcontato__botao:hover {
+    background-color: #0056b3;
+}
