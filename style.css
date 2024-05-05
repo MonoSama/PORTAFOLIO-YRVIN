@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .todo{
     padding: 20px;
     background: rgb(44, 40, 75);
@@ -380,7 +382,7 @@ a:hover{
 
 
 
-
+/*SECCION CONTACTO*/
 
 
 .formcontato__contacto {
@@ -388,18 +390,34 @@ a:hover{
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+    display: flex;
 }
+
+.formcontato__contacto{
+    background-color: #aaaaaa;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+}
+
 
 .formcontato__title {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
+    font-family: "Press Start 2P", system-ui;
+
 }
 
 .formcontato__subtext {
     font-size: 18px;
     margin-bottom: 10px;
+    margin-right: 89px;
     color: #666;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 13px;
 }
 
 .formcontato__form {
@@ -408,7 +426,7 @@ a:hover{
 
 .formcontato__input,
 .formcontato__textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -424,16 +442,97 @@ a:hover{
 
 .formcontato__botao {
     display: block;
-    width: 100%;
+    width: 90%;
     padding: 12px;
     background-color: #007bff;
+    font-family: "Press Start 2P", system-ui;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 1.2s;
 }
 
 .formcontato__botao:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
+
+
+/**/
+
+
+.card_contacto{
+    height: 350px;
+    width: 300px;
+    margin: 50px;
+    transition: 300ms;
+
+}
+
+.personaje, .personaje_2, .personaje_3{
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #00a5ec;
+    transition: 300ms;
+    position: absolute;
+}
+
+.imagen_personaje{
+    height: 350px;
+    width: 200px;
+    background-image: url(assets/vegeta.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.detalle, .detalle_2, .detalle_3{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    margin-top: 150px;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: 300ms;
+}
+/* hover */
+
+.card_contacto:hover{
+    transform: scale(1.1);
+}
+
+.card_contacto:hover .imagen_personaje{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(assets/vegeta_V2.png);
+}
+
+.card_contacto:hover .personaje{
+    background-image: radial-gradient(white,rgb(255, 0, 221));
+}
+
+/* texto y bottun */
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin: auto;
+    width: 90%;
+    font-size: 12px;
+}
+
