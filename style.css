@@ -3,15 +3,33 @@
 .todo{
     padding: 20px;
     background: rgb(44, 40, 75);
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
 }
 
 .menu_list{
-    background-color: rgb(44, 40, 75);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
+    background-color: rgb(44, 40, 75);
     gap: 20px; /*espaciado entre texto*/
     font-family: "Press Start 2P", system-ui;
     font-size: 13px;
 }
+
+@media screen and (max-width: 768px) {
+    .menu_list {
+        flex-direction: column; /* Apila los elementos del menú verticalmente */
+        gap: 10px; /* Espacio entre elementos del menú en pantallas pequeñas */
+    }
+
+    .menu__list__item {
+        font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+}
+
 
 a{
     position: relative;
@@ -216,7 +234,7 @@ a:hover{
 
 
 .about__section {
-    background-color: #ff0000;
+    background-color: #aaaaaa;
     padding: 40px;
     margin-bottom: 50px;
 }
@@ -359,6 +377,201 @@ a:hover{
 }
 
 
+/*ESTILOS FORMACION ACADEMICA*/
+
+.academic {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url("assets/foto_fondo_formacion.jpg");
+    background-size: cover; /* Ajusta la imagen de fondo al tamaño del div */
+    background-position: center; /* Centra la imagen de fondo */
+
+    
+}
+
+.academic__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.academic__courses__box {
+    width: 300px; /* Ancho deseado para cada caja de curso */
+    margin: 0 20px;
+    margin-bottom: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(249, 249, 249, 0.8);
+}
+
+.academic__courses__box:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave al levantar */
+}
+
+.academic__courses__list {
+    list-style: none;
+    padding: 0;
+}
+
+.academic__courses__item__img {
+    margin-bottom: 20px;
+}
+
+.academic__courses__item__img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #292626; /* Borde blanco alrededor de la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la imagen */
+}
+
+.academic__courses__item__title {
+    margin-bottom: 10px;
+
+}
+
+.academic__courses__item__title h4 {
+    font-size: 20px;
+    color: #444;
+}
+
+.academic__courses__item__subtitle {
+    color: #777;
+}
+
+
+/*ESTILOS PROYECTOS*/
+
+.experience {
+    padding: 50px 0;
+    text-align: center;
+    background: rgb(59, 58, 58);
+}
+
+.experience__section__title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+}
+
+.experience__box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.experience__item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.experience__img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.experience__info {
+    margin-bottom: 20px;
+}
+
+.experience__title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.experience__text {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.experience__description {
+    display: flex;
+    justify-content: center;
+}
+
+.experience__button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.experience__button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    
+}
+
+
+
+/*ESTILOS HOBBIES*/
+
+.hobbies {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hobbies__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hobbies__box {
+    margin: 0 20px;
+    margin-bottom: 30px;
+}
+
+.hobbies__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Forma redonda para las imágenes */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del círculo */
+}
+
+.hobbies__img img {
+    width: 100%;
+    height: auto;
+}
+
+.hobbies__name {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #666;
+}
+
+
 /*ESTILOS FOOTER*/
 
 
@@ -408,7 +621,7 @@ a:hover{
     margin-bottom: 20px;
     color: #333;
     font-family: "Press Start 2P", system-ui;
-
+    color: black;
 }
 
 .formcontato__subtext {
@@ -417,6 +630,7 @@ a:hover{
     margin-right: 89px;
     color: #666;
     font-family: "Press Start 2P", system-ui;
+    color: black;
     font-size: 13px;
 }
 
@@ -432,6 +646,8 @@ a:hover{
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 10px;
 }
 
 .formcontato__input:focus,
@@ -532,7 +748,17 @@ h2{
 
 p{
     margin: auto;
-    width: 90%;
+    width: 100%;
     font-size: 12px;
 }
 
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .about__content-wrapper {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 100%; /* Utiliza el ancho completo en pantallas pequeñas */
+    }
+}
