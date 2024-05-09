@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.todo{
+
+/*.todo{
     padding: 20px;
     background: rgb(44, 40, 75);
     padding-top: 35px;
@@ -14,21 +15,9 @@
     padding: 0;
     display: flex;
     background-color: rgb(44, 40, 75);
-    gap: 20px; /*espaciado entre texto*/
+    gap: 20px; 
     font-family: "Press Start 2P", system-ui;
     font-size: 13px;
-}
-
-@media screen and (max-width: 768px) {
-    .menu_list {
-        flex-direction: column; /* Apila los elementos del menú verticalmente */
-        gap: 10px; /* Espacio entre elementos del menú en pantallas pequeñas */
-    }
-
-    .menu__list__item {
-        font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
-    }
-}
 
 
 a{
@@ -41,7 +30,31 @@ a{
 a:hover{
     color: #fFCC00;
     
+} */
+
+
+
+/* Estilo base del menú */
+.menu_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
+
+.menu__list__item {
+    display: inline-block;
+    margin: 0 10px; /* Espacio entre elementos del menú */
+}
+
+.menu__list__item a {
+    text-decoration: none;
+    color: #333; /* Color del texto del enlace */
+    padding: 10px 15px; /* Espacio dentro de cada elemento del menú */
+    display: block;
+}
+
+
 
 .btn_cv_download {
     background-color: #3085d6;
