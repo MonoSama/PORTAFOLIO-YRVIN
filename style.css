@@ -61,14 +61,6 @@ a:hover{
     color: #fFCC00;
 }
 
-/* Estilos para pantallas pequeñas */
-@media only screen and (max-width: 600px) {
-    .menu__list__item {
-        display: block;
-        margin: 10px 0; /* Espacio entre elementos del menú */
-    }
-}
-
 
 
 
