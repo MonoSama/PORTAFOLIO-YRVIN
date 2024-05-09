@@ -37,9 +37,11 @@ a:hover{
 /* Estilo base del menú */
 .menu_list {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    background-color: rgb(3, 35, 54);
 }
 
 .menu__list__item {
@@ -49,10 +51,25 @@ a:hover{
 
 .menu__list__item a {
     text-decoration: none;
-    color: #333; /* Color del texto del enlace */
+    color: #ffffff; /* Color del texto del enlace */
     padding: 10px 15px; /* Espacio dentro de cada elemento del menú */
     display: block;
+    transition: 0.7s;
 }
+
+.menu__list__item a:hover {
+    color: #fFCC00;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    .menu__list__item {
+        display: block;
+        margin: 10px 0; /* Espacio entre elementos del menú */
+    }
+}
+
+
 
 
 
