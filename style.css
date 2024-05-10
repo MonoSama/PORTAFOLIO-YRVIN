@@ -74,6 +74,18 @@
     background-color: #1a61a3;
 }
 
+.signature__title{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 13px;
+    text-align: center;
+}
+
+.signature__box img {
+    max-width: 100%; /* Establecer un ancho máximo */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+
+
 /*
 .title__network {
     display: flex; 
@@ -275,6 +287,7 @@
 .skills__img img{
     width: 100px; /* Establece el ancho deseado para todas las imágenes */
     height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    
 }
 
 .skills__name {
@@ -283,7 +296,10 @@
     color: #333;
     font-family: "Press Start 2P", system-ui;
     font-size: 10px;
+
 }
+
+
 
 .skills__box {
     position: relative; /* Establece la posición relativa para que los elementos internos se posicionen con respecto a este contenedor */
@@ -293,7 +309,7 @@
 }
 
 .skills__img {
-    width: 100px; /* Establece el ancho deseado para todas las imágenes */
+    width: 120px; /* Establece el ancho deseado para todas las imágenes */
     height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
     display: block; /* Permite que las imágenes se ajusten correctamente dentro de su contenedor */
     margin: 0 auto; /* Centra horizontalmente las imágenes */
