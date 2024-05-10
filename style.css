@@ -1,39 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
-/*.todo{
-    padding: 20px;
-    background: rgb(44, 40, 75);
-    padding-top: 35px;
-    display: flex;
-    align-items: center;
-}
-
-.menu_list{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background-color: rgb(44, 40, 75);
-    gap: 20px; 
-    font-family: "Press Start 2P", system-ui;
-    font-size: 13px;
-
-
-a{
-    position: relative;
-    text-decoration: none;
-    color: white;
-    transition: 0.5s;
-}
-
-a:hover{
-    color: #fFCC00;
-    
-} */
-
-
-
 /* Estilo base del menú */
 .menu_list {
     list-style-type: none;
@@ -65,24 +32,9 @@ a:hover{
 
 
 
-.btn_cv_download {
-    background-color: #3085d6;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 28px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px; /* Espacio superior */
-    transition: 0.6s;
-    font-family: "Press Start 2P", system-ui;
-    font-size: 13px;
-}
 
-.btn_cv_download:hover {
-    transform: scale(1.1);
-    background-color: #1a61a3;
-}
+
+/*HOLA MI NOMBRE ES*/
 
 
 .btn_1{
@@ -101,20 +53,40 @@ a:hover{
 }
 
 
+/*
+.btn_cv_download {
+    background-color: #3085d6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.6s;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 13px;
+}
+
+.btn_cv_download:hover {
+    transform: scale(1.1);
+    background-color: #1a61a3;
+}
+
 
 .title__network {
-    display: flex; /* Utiliza flexbox */
-    list-style-type: none; /* Quita los puntos de la lista */
-    padding: 0; /* Elimina el relleno predeterminado */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    display: flex; 
+    list-style-type: none; 
+    padding: 0; 
+    justify-content: center; 
 }
 .title__network__item {
-    margin-right: 20px; /* Espacio entre los elementos */
+    margin-right: 20px; 
 }
 
 .title__network__item a img {
-    width: 30px; /* Tamaño deseado para los iconos */
-    height: auto; /* Mantiene la proporción */
+    width: 30px; 
+    height: auto; 
 }
 
 
@@ -123,18 +95,17 @@ a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 100px 0; /* Ajusta el relleno según sea necesario */
-    text-align: center; /* Centra el contenido */
+    padding: 50px 0; 
+    text-align: center; 
 }
 
 .title__div{
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center;
+    align-items: center;
 }
-
 .title__container{
-    background-color: rgba(255, 255, 255, 0.5); /* Agrega transparencia */
+    background-color: rgba(255, 255, 255, 0.5); 
     border-radius: 28px;
     padding: 25px;
     margin: 20px;
@@ -155,9 +126,110 @@ a:hover{
 }
 
 .title__profile{
-    max-width: 100%; /* Asegura que la imagen no se desborde */
-    height: auto; /* Permite que la imagen conserve su relación de aspecto */
+    max-width: 100%; 
+    height: auto; 
 }
+*/
+.title__container h2{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+}
+
+.title__container h3{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 13px;
+}
+
+.title__profile{
+    max-width: 100%; 
+    height: auto; 
+}
+
+.title {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url("assets/pueblopaleta.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .title__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title__container {
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 20px;
+    margin-right: 20px; /* Espacio entre el contenedor y la foto */
+  }
+  
+  .title__bio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px; /* Espacio inferior */
+    line-height: 40px;
+  }
+  
+  .title__subsection {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px; /* Espacio inferior */
+    line-height: 25px;
+  }
+  
+  .title__network {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .title__network__item {
+    display: inline-block;
+    margin-right: 10px; /* Espacio entre los íconos de red */
+  }
+  
+  .title__network__item:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último ícono de red */
+  }
+  
+  .title__network__item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Hacer los íconos de red redondeados */
+  }
+  
+  .title__profile {
+    max-width: 200px;
+    border-radius: 50%; /* Hacer la foto redondeada */
+  }
+  
+
+
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    .title__container {
+        padding: 15px; /* Reducir el padding para dispositivos móviles */
+        margin: 20px;
+    
+    }
+
+    .title__div {
+        align-items: flex-start; /* Alinear elementos al inicio en dispositivos móviles */
+        display: inline-block;
+    }
+}
+
+/**/
+
+
+
 
 .about__title{
     text-align: center; /* Centra el título */
@@ -168,6 +240,9 @@ a:hover{
     font-family: "Press Start 2P", system-ui;
     font-size: 15px;
 }
+
+
+
 
 
 
@@ -782,5 +857,9 @@ p{
 
     .card {
         max-width: 100%; /* Utiliza el ancho completo en pantallas pequeñas */
+    }
+
+    .formcontato__contacto {
+        display: block;
     }
 }

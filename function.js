@@ -13,6 +13,3 @@ function btn_cv() {
 
 
 
-function hola(){
-    Swal.fire("SweetAlert2 is working!");
-}
