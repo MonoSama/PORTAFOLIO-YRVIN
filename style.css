@@ -110,6 +110,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 70vh;
   }
   
   .title__div {
@@ -223,6 +224,7 @@
 .skills {
     text-align: center;
     padding: 50px 0;
+    background: rgb(3, 35, 54);
 }
 
 .skills__title {
@@ -285,7 +287,7 @@
     transform: translate(-50%, -50%); /* Centra el círculo correctamente */
     width: 100px; /* Establece el tamaño del círculo */
     height: 100px; /* Establece el tamaño del círculo */
-    background-color: rgba(0, 118, 253, 0.5); /* Cambia aquí el color del círculo */
+    background-color: rgba(255, 255, 255, 0.9); /* Cambia aquí el color del círculo */
     border-radius: 50%; /* Hace que el círculo tenga forma circular */
     z-index: -1; /* Asegura que el círculo esté detrás de la imagen */
 }
@@ -312,7 +314,7 @@
 .about__section {
     background-image: url("assets/sobre_mi.jpg");
     padding: 40px;
-    margin-bottom: 50px;
+
 
 
 
@@ -894,7 +896,19 @@ p{
         font-size: 10px;
     }
     
+    .title {
+        text-align: center;
+        padding: 50px 0;
+        
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+ 
+     }
 
+     .title{
+        height: auto;
+     }
 
     
 }
