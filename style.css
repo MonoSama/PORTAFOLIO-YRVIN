@@ -86,63 +86,7 @@
 }
 
 
-/*
-.title__network {
-    display: flex; 
-    list-style-type: none; 
-    padding: 0; 
-    justify-content: center; 
-}
-.title__network__item {
-    margin-right: 20px; 
-}
 
-.title__network__item a img {
-    width: 30px; 
-    height: auto; 
-}
-
-
-.title{
-    background-image: url("assets/pueblopaleta.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 50px 0; 
-    text-align: center; 
-}
-
-.title__div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.title__container{
-    background-color: rgba(255, 255, 255, 0.5); 
-    border-radius: 28px;
-    padding: 25px;
-    margin: 20px;
-    width: 40%;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-
-.title__container h2{
-    font-family: "Press Start 2P", system-ui;
-    font-size: 20px;
-}
-
-.title__container h3{
-    font-family: "Press Start 2P", system-ui;
-    font-size: 13px;
-}
-
-.title__profile{
-    max-width: 100%; 
-    height: auto; 
-}
-*/
 .title__container h2{
     font-family: "Press Start 2P", system-ui;
     font-size: 20px;
@@ -245,15 +189,31 @@
 
 
 
-.about__title{
-    text-align: center; /* Centra el título */
+.about__title {
+    text-align: center; /* Centra el texto */
+    background-color: rgb(255, 255, 255); /* Color de fondo */
+    border-radius: 28px;
+    border: 2px solid black; /* Borde sólido de 2px de ancho y color negro */
+    
+    padding: 10px; /* Añade espacio alrededor del texto */
+    display: block; /* Cambia la visualización a block para que ocupe todo el ancho disponible */
+    width: fit-content; /* Ajusta el ancho al contenido del texto */
+    margin: 0 auto; /* Centra horizontalmente el título */
 }
 
 .about__paragraph{
-    margin: 20px; /* Agrega espacio entre párrafos */
+    
     font-family: "Press Start 2P", system-ui;
-    font-size: 15px;
+
+
+
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    border-radius: 20px;
+
 }
+
 
 
 
@@ -344,25 +304,35 @@
 .about__content h3{
     font-family: "Press Start 2P", system-ui;
     font-size: 15px;
+    padding: 20px;
 }
 
 
 
 .about__section {
-    background-color: #aaaaaa;
+    background-image: url("assets/sobre_mi.jpg");
     padding: 40px;
     margin-bottom: 50px;
+
+
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .about__content-wrapper {
     display: flex; /* Utiliza flexbox para alinear los elementos */
     align-items: center; /* Centra verticalmente los elementos */
+
 }
 
 .about__content {
     flex: 1; /* El contenido ocupará todo el espacio restante */
-    margin-right: 20px; /* Agrega espacio entre el contenido y la imagen */
     line-height: 1.6;
+    text-align: justify;
+    
 }
 
 .about__title {
@@ -387,9 +357,11 @@
 
 
 .about__paragraph {
-    font-size: 16px;
+    font-size: 15px;
     color: #000000;
     margin-bottom: 15px;
+    padding: 20px;
+    width: 90%; /* Define el ancho deseado */
 }
 
 .signature__container {
@@ -412,7 +384,7 @@
     position: relative;
     width: 500px;
     height: 350px;
-    margin: 20px;
+    margin: 5px;
 }
 
 .card .face {
@@ -451,7 +423,6 @@
 .card .back {
     transform: perspective(600px) rotateY(180deg);
     background: rgb(3, 35, 54);
-    padding: 15px;
     color: #f3f3f3;
     display: flex;
     flex-direction: column;
@@ -505,12 +476,19 @@
 }
 
 .academic__title {
-    font-size: 28px;
-    margin-bottom: 40px;
-    color: #333;
+    width: 250px;
+    font-size: 2rem;
+    margin-bottom: 30px;
     font-family: "Press Start 2P", system-ui;
     font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 28px; /* Añade un borde sólido de 2px de ancho y color negro */
+    padding: 15px; /* Añade espacio alrededor del texto para que el borde no esté pegado al texto */
+    display: inline-block; /* Cambia la visualización a inline-block para que el ancho del borde se ajuste automáticamente al texto */
+    border: 2px solid black; /* Borde sólido de 2px de ancho y color negro */
 }
+
+
 
 .academic__courses {
     display: flex;
@@ -579,6 +557,11 @@
     margin-bottom: 30px;
     font-family: "Press Start 2P", system-ui;
     font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 28px; /* Añade un borde sólido de 2px de ancho y color negro */
+    padding: 15px; /* Añade espacio alrededor del texto para que el borde no esté pegado al texto */
+    display: inline-block; /* Cambia la visualización a inline-block para que el ancho del borde se ajuste automáticamente al texto */
+    border: 2px solid black; /* Borde sólido de 2px de ancho y color negro */
 }
 
 .experience__box {
@@ -819,6 +802,7 @@
     font-family: "Press Start 2P", system-ui;
     font-size: 13px;
     line-height: 20px;
+    text-align: justify;
 }
 
 .formcontato__form {
@@ -901,6 +885,14 @@ p{
         font-size: 11px;
     }
 
+    .btn_cv_download{
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    .about__paragraph {
+        font-size: 10px;
+    }
     
 
 
