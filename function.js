@@ -5,8 +5,8 @@ function btn_cv() {
         showConfirmButton: false, // Para no mostrar el botón "OK"
         html: `
 
-        <a href="CVYRVIN_2024.pdf" download="CurriculimVitae_Yrvin.pdf"><button class="btn_cv_download">Descargar CV</button></a>
-        <img src="foto_cv.png" style="max-width: 100%; height: auto;">
+        <a href="Curriculim vitae - Pachas Yrvin.pdf" download="Curriculim vitae - Pachas Yrvin.pdf"><button class="btn_cv_download">Descargar CV</button></a>
+        <img src="foto_cv.jpg" style="max-width: 100%; height: auto;">
     `
     });
 }
