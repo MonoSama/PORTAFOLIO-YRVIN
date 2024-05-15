@@ -228,11 +228,16 @@
 }
 
 .skills__title {
-    font-size: 24px;
+    font-size: 2rem;
     margin-bottom: 30px;
-    font-weight: bold;
     font-family: "Press Start 2P", system-ui;
     font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 28px; /* Añade un borde sólido de 2px de ancho y color negro */
+    padding: 15px; /* Añade espacio alrededor del texto para que el borde no esté pegado al texto */
+    display: inline-block; /* Cambia la visualización a inline-block para que el ancho del borde se ajuste automáticamente al texto */
+    border: 2px solid black; /* Borde sólido de 2px de ancho y color negro */
+    
 }
 
 .skills__line {
@@ -255,7 +260,7 @@
 .skills__name {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
     font-family: "Press Start 2P", system-ui;
     font-size: 10px;
 
@@ -271,25 +276,12 @@
 }
 
 .skills__img {
-    width: 120px; /* Establece el ancho deseado para todas las imágenes */
+    width: 170px; /* Establece el ancho deseado para todas las imágenes */
     height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
     display: block; /* Permite que las imágenes se ajusten correctamente dentro de su contenedor */
     margin: 0 auto; /* Centra horizontalmente las imágenes */
     position: relative; /* Establece la posición relativa para que el círculo se posicione correctamente */
     z-index: 1; /* Asegura que la imagen esté por encima del círculo */
-}
-
-.skills__img::before {
-    content: ""; /* Agrega un contenido vacío para que el pseudo-elemento sea visible */
-    position: absolute; /* Establece la posición absoluta con respecto al contenedor padre (.skills__box) */
-    top: 50%; /* Coloca el círculo en el centro verticalmente */
-    left: 50%; /* Coloca el círculo en el centro horizontalmente */
-    transform: translate(-50%, -50%); /* Centra el círculo correctamente */
-    width: 100px; /* Establece el tamaño del círculo */
-    height: 100px; /* Establece el tamaño del círculo */
-    background-color: rgba(255, 255, 255, 0.9); /* Cambia aquí el color del círculo */
-    border-radius: 50%; /* Hace que el círculo tenga forma circular */
-    z-index: -1; /* Asegura que el círculo esté detrás de la imagen */
 }
 
 
@@ -551,7 +543,7 @@
 .experience {
     padding: 50px 0;
     text-align: center;
-    background: rgb(59, 58, 58);
+    background: rgb(3, 35, 54);
 }
 
 .experience__section__title {
@@ -630,16 +622,23 @@
 
 
 /*ESTILOS HOBBIES*/
-
+/* Estilos base */
 .hobbies {
     text-align: center;
     padding: 50px 0;
+    background: rgb(3, 35, 54);
 }
 
 .hobbies__title {
-    font-size: 24px;
+    font-size: 2rem;
     margin-bottom: 30px;
-    color: #333;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 28px;
+    padding: 15px;
+    display: inline-block;
+    border: 2px solid black;
 }
 
 .hobbies__line {
@@ -649,26 +648,45 @@
 }
 
 .hobbies__box {
+    flex: 0 0 calc(33.33% - 40px);
     margin: 0 20px;
     margin-bottom: 30px;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
 }
 
 .hobbies__img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* Forma redonda para las imágenes */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del círculo */
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .hobbies__img img {
     width: 100%;
     height: auto;
+    border-radius: 15px;
 }
 
 .hobbies__name {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #666;
+    font-size: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .hobbies__box {
+        flex-basis: 100%; /* Cambiar el ancho a 100% para que ocupe toda la fila en dispositivos móviles */
+        margin: 0; /* Eliminar el margen horizontal en dispositivos móviles */
+    }
+    .hobbies__img {
+        width: 80%;
+        height: 100%;
+        display: block; /* Cambiar a bloque para poder usar márgenes automáticos */
+        margin: 0 auto; /* Centrar horizontalmente */
+    }
 }
 
 
@@ -689,7 +707,7 @@
     font-family: "Press Start 2P", system-ui;
     font-size: 15px;
     line-height: 1.8;
-    color: white;
+    color: rgb(221, 221, 221);
 }
 
 
@@ -904,11 +922,16 @@ p{
         background-position: center;
         background-repeat: no-repeat;
  
-     }
+    }
 
-     .title{
+    .title{
         height: auto;
-     }
+    }
 
+    .skills__img {
+        width: 120px; /* Establece el ancho deseado para todas las imágenes */
+       
+    }
+    
     
 }
